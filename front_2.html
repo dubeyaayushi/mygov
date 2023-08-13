@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Company Landing Page</title>
+</head>
+<style>
+    /* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    font-size: 38px;
+    padding: 5px 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 0rem;
+}
+ .header-img {
+    float: left; /* Float the image to the left */
+    margin-left: 24px;
+    margin-top: -14px; /* Add space between the image and other header content */
+    max-width:96px; /* Adjust the maximum width of the image */
+    height:auto;
+ }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    padding: 5px 27px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 10rem 0;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 27px;
+    background-color:#1A237E;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 16px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+}
+
+.about-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.services {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.service {
+    padding: 2rem;
+}
+
+.contact {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+</style>
+<body>
+    <header>
+        <img class="header-img" src="mygov-removebg-preview (2).png" alt="MY Gov" class="logo">
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to MyGOv</h1>
+        <img src="mygov.jpg" alt="MY Gov" class="logo">
+        <p>Your success starts here.</p>
+        <a href="#services" class="cta-button">Our Events</a>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc id justo luctus facilisis.</p>
+        </div>
+        
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from
